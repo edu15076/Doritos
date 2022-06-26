@@ -165,3 +165,18 @@ table {
     background-color: black;
 }
 
+#codigo {
+    grid-row-start: 3;
+    grid-column-start: 5;
+}
+
+#codigo img {
+    height: 100px;
+    width: 200px;
+}
+
+#numeros {
+    background-color: white;
+    width: 200px;
+    color: black;
+}
