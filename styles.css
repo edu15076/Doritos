@@ -146,8 +146,14 @@ table {
     grid-area: 1 / 5 / 2 / 6;
     margin: 0 auto;
 }
-.ingredientes {/*aumentar fonte e colocar quadro*/
+.ingredientes {/*colocar quadro*/
     grid-area: 2 / 5 / 4 / 6;
+    font-size: 24px;
+    text-align: center:
+}
+
+.ingredientes h2 {
+    text-align: center;
 }
 
 #black-right {
