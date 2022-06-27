@@ -14,17 +14,7 @@
          url(https://fonts.gstatic.com/s/sarabun/v13/DtVmJx26TKEr37c9YL5rilUs6zDX.woff2) format('woff2'),
          url(https://fonts.gstatic.com/s/sarabun/v13/DtVmJx26TKEr37c9YL5rilss6w.woff2) format('woff2');
 }
-/*
-    Leiam, especialmente a parte dos pontos "extras": https://github.com/fegemo/cefet-front-end/tree/master/assignments/tp1-subject-x
-    Dos pontos extras:
-    1. Falta terminar
-    2. Talvez deixar o nav fixo durante a rolagem e para fazer a animação da logo tocar
-    3. Eu peguei a animação do site oficial do doritos emprestada
 
-
-
-    
-    */
 html {
     font-size: 10%;
 }
@@ -124,16 +114,19 @@ main {
 #direita {
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
-    grid-template: auto auto / 1fr;
+    grid-template: auto 1fr / 1fr;
     font-family: 'Sarabun', sans-serif;
 }
 
 .tabela {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     padding: 1.448% 2.896%;
     border-radius: 4.343%;
     background-color: black;
     margin: 4.343% auto 0 auto;
-    height: calc(27.5vw + 55px);
+    height: auto;
     width: calc(22.1vw + 1px);
     grid-area: 1 / 1 / 2 / 2;
     text-shadow: none;
@@ -172,7 +165,7 @@ td, th {
     background-color: white;
     width: calc(16.15533vw + 1px);
     height: calc(10.15533vw + 1px);
-    margin: 0 auto;
+    margin: auto auto;
     border-radius: calc(0.9988vw + 1px);
 }
 
