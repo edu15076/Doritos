@@ -173,6 +173,7 @@ td, th {
     width: 219px;
     height: 140px;
     margin: 0 auto;
+    border-radius: 10px;
 }
 
 #codigo img {
@@ -180,6 +181,7 @@ td, th {
     width: calc(9.766vw + 1px);
     width: 219px;
     height: 120px;
+    border-radius: 10px;
 }
 
 #codigo a {
@@ -187,7 +189,7 @@ td, th {
     color: black;
     font-size: calc(0.778905vw + 1px);
     width: 189px;
-    padding-left: 13px;
+    padding-left: 26px;
 }
 
 #linha1 {
