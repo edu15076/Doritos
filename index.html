@@ -12,8 +12,8 @@
     <nav>
         <header>
             <p>Um site criado de fãs</p>
-            <p id="aqui">Para os verdadeiros fãs do melhor salgado</p>
-            <a href="index.html"><img src="img/logo.gif" alt="essa é a logo do doritos" id="logo-topo"></a>
+            <p>Para os verdadeiros fãs do melhor salgado</p>
+            <a href="index.html"><img src="img/logo.gif" data-gif="img/logo.gif" alt="essa é a logo do doritos"></a>
             <a href="index.html">FOR THE BOLD</a>
         </header>
         <ul>
@@ -24,66 +24,81 @@
         </ul>
     </nav>
     <main>
-        <div id="black-right"></div>
-        <div id="black-left"></div>
-        <div class="tabela">
-            <h2>Informações NÃO Nutricionais</h2>
-            <h3>*Porção de 20g/dose de informações*</h3>
-            <table>
-                <thead>  
-                    <tr>
-                        <th>Sobre o salgadinho triangular</th>
-                        <th>Proporção(a cada 20g/informação)</th>
-                    </tr>
-                </thead>  
-                <tbody>  
-                    <tr>
-                        <td>O salgadinho foi lançado em 1964</td>
-                        <td>3g</td>
-                    </tr>
-                    <tr>
-                        <td>Intencionalmente, DORITOS soa como "doradito"/"douradinho"</td>
-                        <td>5g</td>
-                    </tr>
-                    <tr>
-                        <td>1972: sabor queijo nacho e dispersão nacional do salgado</td>
-                        <td>7g</td>
-                    </tr>
-                    <tr>
-                        <td>1986: o salgado chegou no Brasil</td>
-                        <td>3g</td>
-                    </tr>
-                    <tr>
-                        <td>Vendas diárias de 5 milhões de salgados, só nos EUA!</td>
-                        <td>2g</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td>Ganho de conhecimento super útil</td>
-                        <td>Total: 20g</td>
-                    </tr> 
-                </tfoot>  
-            </table>
-            <p>
-                Valores diários de referência com base em uma dieta de 8400 kJ de informações por dia.
-                Valores podem ser maiores ou menores com base na sua necessidade diária de conhecimentos sobre Doritos.
-            </p>
-        </div>
-        <img src="img/Doritos-Logo.png" id="logo">
-        <div class="ingredientes">
-            <h2>Do que é feito Doritos?</h2>
-            <p>
-                Há inúmeros sabores de Doritos, portanto, os ingredientes variam entre esses.
-                Porém, alguns ingredientes são comuns na maioria, e se destacam:
-                milho, óleos vegetais, sal, aromatizantes, corantes, cebola e alho em pó,
-                intensificadores de sabor, reguladores de acidez, açúcar, e claro, os preparados de cada sabor.
-            </p>
-        </div>
-        <div id="codigo">
-            <img src="img/código-de-barras.png">
-            <a href="https://shopee.com.br/search?keyword=doritos" id="numeros">1   443 367 115 135 067 563</a>  
-        </div>
+        <section id="direita">
+            <article class="tabela">
+                <h2>Informações NÃO Nutricionais</h2>
+                <h3>*Porção de 20g/dose de informações*</h3>
+                <table>
+                    <thead>  
+                        <tr>
+                            <th>Sobre o salgadinho triangular</th>
+                            <th>Proporção(a cada 20g/informação)</th>
+                        </tr>
+                    </thead>  
+                    <tbody>  
+                        <tr>
+                            <td>O salgadinho foi lançado em 1964</td>
+                            <td>3g</td>
+                        </tr>
+                        <tr>
+                            <td>Intencionalmente, DORITOS soa como "doradito"/"douradinho"</td>
+                            <td>5g</td>
+                        </tr>
+                        <tr>
+                            <td>1972: sabor queijo nacho e dispersão nacional do salgado</td>
+                            <td>7g</td>
+                        </tr>
+                        <tr>
+                            <td>1986: o salgado chegou no Brasil</td>
+                            <td>3g</td>
+                        </tr>
+                        <tr>
+                            <td>Vendas diárias de 5 milhões de salgados, só nos EUA!</td>
+                            <td>2g</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Ganho de conhecimento super útil</td>
+                            <td>Total: 20g</td>
+                        </tr> 
+                    </tfoot>  
+                </table>
+                <p>
+                    Valores diários de referência com base em uma dieta de 8400 kJ de informações por dia.
+                    Valores podem ser maiores ou menores com base na sua necessidade diária de conhecimentos sobre Doritos.
+                </p>
+            </article>
+            <article id="codigo">
+                <img src="img/código-de-barras.png">
+                <a href="https://shopee.com.br/search?keyword=doritos" id="numeros">1   443 367 115 135 067 563</a>  
+            </article>
+        </section>
+        <div id="linha1"></div>
+        <div id="linha2"></div>
+        <section id="esquerda">
+            <img src="img/Doritos-Logo.png">
+            <article class="ingredientes">
+                <h2>Do que é feito Doritos?</h2>
+                <p>
+                    Há inúmeros sabores de Doritos, portanto, os ingredientes variam entre esses.
+                    Porém, alguns ingredientes são comuns na maioria, e se destacam:
+                    milho, óleos vegetais, sal, aromatizantes, corantes, cebola e alho em pó,
+                    intensificadores de sabor, reguladores de acidez, açúcar, e claro, os preparados de cada sabor.
+                </p>
+                <p class="alergicos">
+                    ALÉGICOS: CONTÉM DERIVADOS DE SOJA E DE LEITE, LACTOSE, GLÚTEM, PODE CONTER TRIGO
+                </p>
+            </article>
+        </section>
     </main>
+    <footer>
+        <p>©2022-site-doritos-foda</p>
+        <p>Nenhum direito reservado</p>
+        <img src="img/instagram.png">
+        <img src="img/facebook.png">
+        <img src="img/youtube.png">
+        <img src="img/whatsapp.png">
+    </footer>
 </body>
 </html>

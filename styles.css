@@ -1,10 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Sarabun:wght@300&display=swap');
 
 @font-face {
     font-family: 'League Gothic';
     src: url(https://fonts.gstatic.com/s/leaguegothic/v5/qFdR35CBi4tvBz81xy7WG7ep-BQAY7Krj7feObpH_9aug9UKQw.woff2) format('woff2'),
          url(https://fonts.gstatic.com/s/leaguegothic/v5/qFdR35CBi4tvBz81xy7WG7ep-BQAY7Krj7feObpH_9avg9UKQw.woff2) format('woff2'),
          url(https://fonts.gstatic.com/s/leaguegothic/v5/qFdR35CBi4tvBz81xy7WG7ep-BQAY7Krj7feObpH_9ahg9U.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Sarabun';
+    src: url(https://fonts.gstatic.com/s/sarabun/v13/DtVmJx26TKEr37c9YL5rik8s6zDX.woff2) format('woff2'),
+         url(https://fonts.gstatic.com/s/sarabun/v13/DtVmJx26TKEr37c9YL5rilQs6zDX.woff2) format('woff2'),
+         url(https://fonts.gstatic.com/s/sarabun/v13/DtVmJx26TKEr37c9YL5rilUs6zDX.woff2) format('woff2'),
+         url(https://fonts.gstatic.com/s/sarabun/v13/DtVmJx26TKEr37c9YL5rilss6w.woff2) format('woff2');
 }
 /*
     Leiam, especialmente a parte dos pontos "extras": https://github.com/fegemo/cefet-front-end/tree/master/assignments/tp1-subject-x
@@ -15,20 +23,15 @@
 
 
 
+    
+    */
+html {
+    font-size: 10%;
+}
 
-*/
 body {
-    background-color: #7a0000;
-    margin: 0px 0px;
-}
-
-html, body {
-    min-height: 100%;
-}
-
-h2 {
-    text-align: justify;
-    font-size: 28px;
+    background-color: black;
+    margin: 0 0;
 }
 
 a:link {
@@ -49,9 +52,12 @@ a:active {
 }
 
 nav {
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+    width: 100%;
     font-family: 'League Gothic', sans-serif;
     color: white;
-    background-color: black;/*Deixei preto para a animação do doritos ficar massa, se quizerem trocar apagem essa linha e tirem a animaça do index e das ouras paginas*/
     font-style: italic;
     display: flex;
     justify-content: space-between;
@@ -59,124 +65,197 @@ nav {
 }
 
 header {
-    font-size: 32px;
-    margin-left: 5px;
+    margin-left: 0.247%;
     display: grid;
     grid-template: 1fr 1fr / auto auto auto;
 }
 
-header > p:first-of-type {
-    margin: auto 0px 5px 0px;
-    font-size: 112.5%;
+header p:first-of-type {
+    margin: auto 0 2.045% 0;
+    font-size: calc(1.75781vw + 1px);
+    text-align: center;
 }
 
-header > p:nth-of-type(2) {
-    margin: 0px 0px;
-    font-size: 22px;
+header p:nth-of-type(2) {
+    margin: 0 0;
+    font-size: calc(1.07422vw + 1px);
     grid-row-start: 2;
 }
 
-header img {
-    grid-area: 1 / 2 / 3 / 3;
-    height: 115px;
-    margin: 5px 10px 5px 50px;
+a img {
+    height: 92%;
+    margin: 2.406% 4.812% 2.406% 24.06%;
+    transition: all .3s ease;
 }
 
 header a:first-of-type {
     grid-area: 1 / 2 / 3 / 3;
+    height: calc(6.104vw + 1px);
+    width: calc(10.14899vw + 1px);
 }
 
-header > a:last-of-type {
+header a:last-of-type {
     grid-area: 2 / 3 / 3 / 4;
-    margin: 10px 0px auto 0px;
-    font-family: 32px;
+    margin: 8.33% 0 auto 0;
+    font-size: calc(1.5625vw + 1px);
 }
 
 ul {
-    font-size: 46px;
+    font-size: calc(2.246092vw + 1px);
     width: 45%;
-    margin: 0px 0px;
-    padding: 0px 115px 0px 0px;
+    margin: 0 0;
+    padding: 0 calc(4.63867vw + 1px) 0 0;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
 }
 
 main {
+    position: relative;
+    top: calc(6.104vw + 1px);
     font-family: 'League Gothic', sans-serif;
     color: white;
     display: grid;
-    grid-template: 74.94% 25.06% auto / 85px 1fr 6fr 2fr 6fr 1fr 85px;
+    margin: 0 4.197%;
+    background-color: #7a0000;
+    grid-template: auto / 1fr 6fr 1fr 0.533% 0.16% 1fr 6fr 1fr;
 }
 
-.tabela {/*mudar a fonte da tabela*/
-    font-size: 28px;
-    padding: 10px 20px;
-    border-radius: 20px;
+#direita {
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template: auto auto / 1fr;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.tabela {
+    padding: 1.448% 2.896%;
+    border-radius: 4.343%;
     background-color: black;
-    margin-top: 30px;
-    height: 530px;
-    width: 400px;
-    grid-area: 1 / 3 / 3 / 4;
+    margin: 4.343% auto 0 auto;
+    height: calc(27.5vw + 55px);
+    width: calc(22.1vw + 1px);
+    grid-area: 1 / 1 / 2 / 2;
     text-shadow: none;
+    text-align: center;
 }
 
-td, th {
-    font-size: 22px;
-    border: 2px solid black;
-    background-color: white;
-    color: black;
+.tabela h2 {
+    font-size: calc(1.3vw + 1px);
+    margin: calc(0.245vw + 0.3px) 0;
+}
+
+.tabela h3 {
+    font-size: calc(1.07422vw + 1px);
+    margin: calc(0.245vw 0 + 0.3px);
 }
 
 table {
     border-collapse: collapse;
 }
 
-.tabela h2, h3, table, p {
-    text-align: center;
+td, th {
+    font-size: calc(0.84vw + 1px);
+    border: 0.098vw solid black;
+    padding: calc(0.049vw + 0.3px);
+    background-color: white;
+    color: black;
 }
 
 .tabela p {
-    font-size: 14px;
+    font-size: calc(0.678905vw + 1px);
     font-style: italic;
 }
 
-#logo {
-    width: 70.999%;
-    grid-area: 1 / 5 / 2 / 6;
-    margin: 0 auto;
-}
-.ingredientes {/*colocar quadro*/
-    grid-area: 2 / 5 / 4 / 6;
-    font-size: 24px;
-    text-align: center:
-}
-
-.ingredientes h2 {
-    text-align: center;
-}
-
-#black-right {
-    grid-row: 1 / 4;
-    background-color: black;
-}
-#black-left {
-    grid-area: 1 / 7 / 4 / 8;
-    background-color: black;
-}
-
 #codigo {
-    grid-row-start: 3;
-    grid-column-start: 5;
+    grid-area: 2 / 1 / 3 / 2;
 }
 
 #codigo img {
-    height: 100px;
-    width: 200px;
+    height: calc(4.883vw + 1px);
+    width: calc(9.766vw + 1px);
 }
 
-#numeros {
+#codigo a {
     background-color: white;
-    width: 200px;
+    width: calc(9.766vw + 1px);
     color: black;
+    font-size: calc(0.678905vw + 1px);
+}
+
+#linha1 {
+    grid-area: 1 / 4 / 2 / 5;
+    background-color: #972618;
+}
+
+#linha2 {
+    grid-area: 1 / 5 / 2 / 6;
+    background-color: white;
+}
+
+#esquerda {
+    grid-area: 1 / 7 / 2 / 8;
+    display: grid;
+    grid-template: auto auto / 1fr;
+}
+
+#esquerda img {
+    width: calc(24.4147vw + 1px);
+    grid-area: 1 / 1 / 2 / 2;
+    margin: 0 auto;
+}
+
+.ingredientes {
+    grid-area: 2 / 1 / 3 / 2;
+    margin: calc(1.464842vw + 1px) 0;
+    padding: calc(0.976562vw + 1px);
+    background-color: #707070;
+}
+
+#esquerda h2 {
+    font-size: calc(2.246092vw + 1px);
+    text-align: center;
+    font-style: italic;
+    margin: 0 0 calc(0.976562vw + 1px) 0;
+    padding: calc(0.976562vw + 1px);
+    background-color: #972618;
+}
+
+#esquerda p:not(.alergicos) {
+    font-size: calc(1.5625vw + 1px);
+    text-align: justify;
+    margin: 0 0;
+    padding: calc(0.976562vw + 1px);
+    background-color: #972618;
+}
+
+.alergicos {
+    font-size: calc(1.5625vw + 1px);
+    text-align: center;
+    margin: calc(0.976562vw + 1px) 0 0 0;
+    padding: calc(0.976562vw + 1px);
+    background-color: #7a0000;
+}
+
+footer {
+    font-family: 'League Gothic', sans-serif;
+    position: relative;
+    top: calc(5.6vw + 1px);
+    height: calc(7.8vw + 1px);
+    display: block;
+    text-align: center;
+}
+
+footer p {
+    font-size: calc(1.4vw + 1px);
+    color: white;
+    font-style: italic;
+    margin: 0.5% 0;
+}
+
+footer img {
+    width: calc(2.15vw + 1px);
+    margin: 0.15%;
+    border: 0.147vw solid white;
+    border-radius: 50%;
 }
