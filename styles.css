@@ -15,10 +15,6 @@
          url(https://fonts.gstatic.com/s/sarabun/v13/DtVmJx26TKEr37c9YL5rilss6w.woff2) format('woff2');
 }
 
-html {
-    font-size: 10%;
-}
-
 body {
     background-color: black;
     margin: 0 0;
@@ -62,13 +58,13 @@ header {
 
 header p:first-of-type {
     margin: auto 0 2.045% 0;
-    font-size: calc(1.75781vw + 1px);
+    font-size: 1.75781vw;
     text-align: center;
 }
 
 header p:nth-of-type(2) {
     margin: 0 0;
-    font-size: calc(1.07422vw + 1px);
+    font-size: 1.07422vw;
     grid-row-start: 2;
 }
 
@@ -80,21 +76,21 @@ a img {
 
 header a:first-of-type {
     grid-area: 1 / 2 / 3 / 3;
-    height: calc(6.104vw + 1px);
-    width: calc(10.14899vw + 1px);
+    height: 6.104vw;
+    width: 10.14899vw;
 }
 
 header a:last-of-type {
     grid-area: 2 / 3 / 3 / 4;
     margin: 8.33% 0 auto 0;
-    font-size: calc(1.5625vw + 1px);
+    font-size: 1.5625vw;
 }
 
 ul {
-    font-size: calc(2.246092vw + 1px);
+    font-size: 2.246092vw;
     width: 45%;
     margin: 0 0;
-    padding: 0 calc(4.63867vw + 1px) 0 0;
+    padding: 0 4.63867vw 0 0;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
@@ -102,13 +98,13 @@ ul {
 
 main {
     position: relative;
-    top: calc(6.104vw + 1px);
+    top: 6.104vw;
     font-family: 'League Gothic', sans-serif;
     color: white;
     display: grid;
     margin: 0 4.197%;
     background-color: #7a0000;
-    grid-template: auto / 1fr 6fr 1fr 0.533% 0.16% 1fr 6fr 1fr;
+    grid-template: auto / 1fr 12fr 1fr 0.533% 0.16% 1fr 12fr 1fr;
 }
 
 #direita {
@@ -127,20 +123,20 @@ main {
     background-color: black;
     margin: 4.343% auto 0 auto;
     height: auto;
-    width: calc(22.1vw + 1px);
+    width: 22.1vw;
     grid-area: 1 / 1 / 2 / 2;
     text-shadow: none;
     text-align: center;
 }
 
 .tabela h2 {
-    font-size: calc(1.3vw + 1px);
-    margin: calc(0.245vw + 0.3px) 0;
+    font-size: 1.3vw;
+    margin: 0.5vw 0;
 }
 
 .tabela h3 {
-    font-size: calc(1.07422vw + 1px);
-    margin: calc(0.245vw 0 + 0.3px);
+    font-size: 1.07422vw;
+    margin: 0.5vw;
 }
 
 table {
@@ -148,38 +144,38 @@ table {
 }
 
 td, th {
-    font-size: calc(0.84vw + 1px);
+    font-size: 0.84vw;
     border: 0.098vw solid black;
-    padding: calc(0.049vw + 0.3px);
+    padding: 0.3vw;
     background-color: white;
     color: black;
 }
 
 .tabela p {
-    font-size: calc(0.678905vw + 1px);
+    font-size: 0.678905vw;
     font-style: italic;
 }
 
 #codigo {
     grid-area: 2 / 1 / 3 / 2;
     background-color: white;
-    width: calc(16.15533vw + 1px);
-    height: calc(10.15533vw + 1px);
+    width: 16.15533vw;
+    height: 10.6vw;
     margin: auto auto;
-    border-radius: calc(0.9988vw + 1px);
+    border-radius: 0.9988vw;
 }
 
 #codigo img {
-    height: calc(8.883vw + 1px);
-    width: calc(15.966vw + 1px);
-    border-radius: calc(0.9988vw + 1px);
+    height: 8.883vw;
+    width: 15.966vw;
+    border-radius: 0.9988vw;
 }
 
 #codigo a {
     color: black;
-    font-size: calc(0.778905vw + 1px);
-    width: calc(9.766vw + 1px);
-    padding-left: calc(3.15533vw + 1px);
+    font-size: 0.94vw;
+    width: 9.766vw;
+    padding-left: 2.6vw;
 }
 
 #linha1 {
@@ -199,62 +195,228 @@ td, th {
 }
 
 #esquerda img {
-    width: calc(24.4147vw + 1px);
+    width: 24.4147vw;
     grid-area: 1 / 1 / 2 / 2;
     margin: 0 auto;
 }
 
 .ingredientes {
     grid-area: 2 / 1 / 3 / 2;
-    margin: calc(1.464842vw + 1px) 0;
-    padding: calc(0.976562vw + 1px);
+    margin: 1.464842vw 0;
+    padding: 0.976562vw;
     background-color: #707070;
 }
 
 #esquerda h2 {
-    font-size: calc(2.246092vw + 1px);
+    font-size: 2.246092vw;
     text-align: center;
     font-style: italic;
-    margin: 0 0 calc(0.976562vw + 1px) 0;
-    padding: calc(0.976562vw + 1px);
+    margin: 0 0 0.976562vw 0;
+    padding: 0.976562vw;
     background-color: #972618;
 }
 
 #esquerda p:not(.alergicos) {
-    font-size: calc(1.5625vw + 1px);
+    font-size: 1.5625vw;
     text-align: justify;
     margin: 0 0;
-    padding: calc(0.976562vw + 1px);
+    padding: 0.976562vw;
     background-color: #972618;
 }
 
 .alergicos {
-    font-size: calc(1.5625vw + 1px);
+    font-size: 1.5625vw;
     text-align: center;
-    margin: calc(0.976562vw + 1px) 0 0 0;
-    padding: calc(0.976562vw + 1px);
+    margin: 0.976562vw 0 0 0;
+    padding: 0.976562vw;
     background-color: #7a0000;
 }
 
 footer {
     font-family: 'League Gothic', sans-serif;
     position: relative;
-    top: calc(5.6vw + 1px);
-    height: calc(7.8vw + 1px);
+    top: 5.6vw;
+    height: 7.8vw;
     display: block;
     text-align: center;
 }
 
 footer p {
-    font-size: calc(1.4vw + 1px);
+    font-size: 1.4vw;
     color: white;
     font-style: italic;
     margin: 0.5% 0;
 }
 
 footer img {
-    width: calc(2.15vw + 1px);
+    width: 2.15vw;
     margin: 0.15%;
     border: 0.147vw solid white;
     border-radius: 50%;
+}
+
+@media screen and (orientation: portrait) {
+    body {
+        background-color: black;
+        margin: 0 0;
+    }
+    
+    a:link {
+        color: white;
+        text-decoration: none;
+    }
+    
+    a:visited {
+        color: white;
+    }
+    
+    a:hover {
+        color: #7a0000;
+    }
+    
+    a:active {
+        color: white;
+    }
+    
+    nav {
+        position: fixed;
+        z-index: 1;
+        background-color: black;
+        width: 100%;
+        font-family: 'League Gothic', sans-serif;
+        color: white;
+        font-style: italic;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header {
+        margin-left: 0.247%;
+        display: grid;
+        grid-template: 1fr 1fr / auto auto auto;
+    }
+    
+    header p:first-of-type {
+        margin: auto 0 2.045% 0;
+        font-size: 0;
+        text-align: center;
+    }
+    
+    header p:nth-of-type(2) {
+        margin: 0 0;
+        font-size: 0;
+        grid-row-start: 2;
+    }
+    
+    header a:first-of-type {
+        height: 14vw;
+        width: 21.34vw;
+    }
+    
+    header a:last-of-type {
+        margin: 8.33% 0 auto 0;
+        font-size: 3.6vw;
+    }
+    
+    ul {
+        font-size: 4vw;
+        width: 45%;
+        margin: 0 0;
+        padding: 0 4.6vw 0 0;
+    }
+    
+    main {
+        top: 14vw;
+        margin: 0 4.197%;
+        grid-template: auto / 1fr 24fr 1fr 0.533% 0.16% 1fr 24fr 1fr;
+    }
+
+    .tabela {
+        padding: 4.5% 5.4%;
+        border-radius: 4.343%;
+        margin: 12% auto 0 auto;
+        height: auto;
+        width: 35vw;
+    }
+    
+    .tabela h2 {
+        font-size: 4vw;
+        margin: 0.5vw 0;
+    }
+    
+    .tabela h3 {
+        font-size: 3.2vw;
+        margin: 0.5vw;
+    }
+    
+    td, th {
+        font-size: 1.9vw;
+        border: 0.098vw solid black;
+        padding: 0.04vw;
+    }
+    
+    .tabela p {
+        font-size: 1.6vw;
+    }
+    
+    #codigo {
+        width: 32vw;
+        height: 22vw;
+        margin: 5vw auto;
+        border-radius: 1vw;
+    }
+    
+    #codigo img {
+        height: 17.8vw;
+        width: 32vw;
+        border-radius: 1vw;
+    }
+    
+    #codigo a {
+        font-size: 2.1vw;
+        height: 17.8vw;
+        width: 32vw;
+    }
+    
+    #esquerda img {
+        width: 40vw;
+    }
+    
+    .ingredientes {
+        margin: 2vw 0;
+        padding: 2vw;
+    }
+    
+    #esquerda h2 {
+        font-size: 6vw;
+        margin: 0 0 2vw 0;
+        padding: 2vw;
+    }
+    
+    #esquerda p:not(.alergicos) {
+        font-size: 4vw;
+        padding: 2vw;
+    }
+    
+    .alergicos {
+        font-size: 4vw;
+        margin: 2vw 0 0 0;
+        padding: 2vw;
+    }
+    
+    footer {
+        top: 13.5vw;
+        height: 12vw;
+    }
+    
+    footer p {
+        font-size: 2.7vw;
+    }
+    
+    footer img {
+        width: 4vw;
+        border: 0.147vw solid white;
+        border-radius: 50%;
+    }
 }
