@@ -320,6 +320,81 @@ footer img {
     border-radius: 50%;
 }
 
+#nossa-historia {
+    position: relative;
+    top: 6.104vw;
+    font-family: 'League Gothic', sans-serif;
+    color: white;
+    background-color: #7a0000;
+    display: grid;
+    grid-template: auto auto auto auto auto / 1fr;
+}
+
+#nossa-historia h1 {
+    grid-area: 1 / 1 / 2 / 2;
+    text-align: center;
+    font-size: 4.5vw;
+}
+
+#nossa-historia img {
+    width: 18vw;
+    height: 18vw;
+    border-radius: 50%;
+    border: 0.4vw solid black; /* mudar cor da borad pqp */
+}
+
+#nossa-historia p {
+    font-size: 2vw;
+}
+
+.unique-p {
+    padding: 0.976562vw;
+    background-color: #707070;
+    margin: 0.976562vw;
+    height: fit-content;
+    width: 50%;
+}
+
+.unique-p p {
+    font-size: 1.5625vw;
+    text-align: justify;
+    margin: 0 0;
+    padding: 0.976562vw;
+    background-color: #972618;
+}
+
+#nossa-história p:nth-of-type(2n+1) {
+    order: 1;
+}
+
+#nossa-historia article:first-of-type {
+    display: flex;
+    justify-content: space-around;
+    grid-area: 2 / 1 / 3 / 2;
+    align-items: center;
+}
+
+#nossa-historia article:nth-of-type(2) {
+    display: flex;
+    justify-content: space-around;
+    grid-area: 3 / 1 / 4 / 2;
+    align-items: center;
+}
+
+#nossa-historia article:nth-of-type(3) {
+    display: flex;
+    justify-content: space-around;
+    grid-area: 4 / 1 / 5 / 2;
+    align-items: center;
+}
+
+#nossa-historia article:last-of-type {
+    display: flex;
+    justify-content: space-around;
+    grid-area: 5 / 1 / 6 / 2;
+    align-items: center;
+}
+
 @media screen and (orientation: portrait) {
     body {
         background-color: black;
