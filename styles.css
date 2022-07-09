@@ -15,17 +15,40 @@
          url(https://fonts.gstatic.com/s/sarabun/v13/DtVmJx26TKEr37c9YL5rilss6w.woff2) format('woff2');
 }
 
+/*Global*/
+
 body {
     background-color: black;
     margin: 0 0;
 }
 
-h1{
-    text-align: center;
-    font-size: 60px;
-    color: white; 
-    font-style: italic;
+.text {
+    margin: 1.464842vw 0;
+    padding: 0.976562vw;
+    background-color: #707070;
+    height: fit-content;
 }
+
+.text h2 {
+    font-size: 2.246092vw;
+    text-align: center;
+    font-style: italic;
+    margin: 0 0 0.976562vw 0;
+    padding: 0.976562vw;
+    background-color: #7a0000;
+}
+
+.text p:not(.alergicos) {
+    font-size: 1.5625vw;
+    text-align: justify;
+    margin: 0 0;
+    padding: 0.976562vw;
+    background-color: #972618;
+}
+
+/*End global*/
+
+/*Start header*/
 
 a:link {
     color: white;
@@ -76,9 +99,17 @@ header p:nth-of-type(2) {
 }
 
 a img {
+    position: absolute;
     height: 92%;
-    margin: 2.406% 4.812% 2.406% 24.06%;
-    transition: all .3s ease;
+    margin: .2441408vw .488283vw .2441408vw 2.441406vw;
+}
+
+a img:first-of-type {
+    z-index: 1;
+}
+
+a img:first-of-type:hover {
+    opacity: 0;
 }
 
 header a:first-of-type {
@@ -103,7 +134,11 @@ ul {
     list-style-type: none;
 }
 
-#principal {
+/*End header*/
+
+/*start index*/
+
+#index {
     position: relative;
     top: 6.104vw;
     font-family: 'League Gothic', sans-serif;
@@ -113,6 +148,8 @@ ul {
     background-color: #7a0000;
     grid-template: auto / 1fr 12fr 1fr 0.533% 0.16% 1fr 12fr 1fr;
 }
+
+/*direita*/
 
 #direita {
     grid-area: 1 / 2 / 2 / 3;
@@ -167,9 +204,11 @@ td, th {
     grid-area: 2 / 1 / 3 / 2;
     background-color: white;
     width: 16.15533vw;
-    height: 10.6vw;
+    height: 10.3vw;
     margin: auto auto;
     border-radius: 0.9988vw;
+    display: flex;
+    flex-direction: column;
 }
 
 #codigo img {
@@ -181,9 +220,10 @@ td, th {
 #codigo a {
     color: black;
     font-size: 0.94vw;
-    width: 9.766vw;
     padding-left: 2.6vw;
 }
+
+/*Linhas*/
 
 #linha1 {
     grid-area: 1 / 4 / 2 / 5;
@@ -194,6 +234,8 @@ td, th {
     grid-area: 1 / 5 / 2 / 6;
     background-color: white;
 }
+
+/*esquerda*/
 
 #esquerda {
     grid-area: 1 / 7 / 2 / 8;
@@ -207,29 +249,14 @@ td, th {
     margin: 0 auto;
 }
 
-.ingredientes {
+#esquerda .text {
     grid-area: 2 / 1 / 3 / 2;
-    margin: 1.464842vw 0;
-    padding: 0.976562vw;
-    background-color: #707070;
 }
 
 #esquerda h2 {
-    font-size: 2.246092vw;
-    text-align: center;
-    font-style: italic;
-    margin: 0 0 0.976562vw 0;
-    padding: 0.976562vw;
     background-color: #972618;
 }
 
-#esquerda p:not(.alergicos) {
-    font-size: 1.5625vw;
-    text-align: justify;
-    margin: 0 0;
-    padding: 0.976562vw;
-    background-color: #972618;
-}
 
 .alergicos {
     font-size: 1.5625vw;
@@ -237,88 +264,13 @@ td, th {
     margin: 0.976562vw 0 0 0;
     padding: 0.976562vw;
     background-color: #7a0000;
+    margin: -0.1vw;
+    border-top: 0.976562vw solid #707070;
 }
 
-#sobre-nos {
-    display: grid;
-    padding: 0 4.197%; 
-    grid-template: auto auto auto / 5fr 1fr 5fr 1fr 5fr;
-    background-color: #7a0000;
-    color: white; 
-    font-size: 30px;
-    text-align: justify;
-    font-family: 'League Gothic', sans-serif;
-    position: relative;
-    top: 6.104vw;
-}
+/*End index*/
 
-#sobre-nos p {
-    border: 0.976562vw solid #707070;
-    background-color: #972618;
-}
-
-#sobre-nos p:first-of-type {
-    padding: 20px;
-    grid-area: 2 / 1 / 3 / 2;
-}
-
-#sobre-nos p:nth-of-type(2) {
-    padding: 20px;
-    grid-area: 2 / 3 / 3 / 4;
-}
-
-#sobre-nos p:last-of-type {
-    grid-area: 2 / 5 / 3 / 6;
-    padding: 20px;
-}
-
-#sobre-nos img:first-of-type {
-    padding: 200px;
-    grid-area: 1 / 1 / 2 / 2;
-    margin: 0 auto;
-    border-radius: 50%;
-}
-
-#sobre-nos img:nth-of-type(2) {
-    padding: 200px;
-    grid-area: 1 / 3 / 2 / 4;
-    margin: 0 auto;
-    border-radius: 50%;
-}
-
-#sobre-nos img:last-of-type {
-    grid-area: 1 / 5 / 2 / 6;
-    padding: 200px;
-    margin: 0 auto;
-    border-radius: 50%;
-}
-
-#sobre-nos h1 {
-    grid-area: 1 / 1 / 2 / 6;
-}
-
-footer {
-    font-family: 'League Gothic', sans-serif;
-    position: relative;
-    top: 5.6vw;
-    height: 7.8vw;
-    display: block;
-    text-align: center;
-}
-
-footer p {
-    font-size: 1.4vw;
-    color: white;
-    font-style: italic;
-    margin: 0.5% 0;
-}
-
-footer img {
-    width: 2.15vw;
-    margin: 0.15%;
-    border: 0.147vw solid white;
-    border-radius: 50%;
-}
+/*Start nossa história*/
 
 #nossa-historia {
     position: relative;
@@ -334,37 +286,24 @@ footer img {
     grid-area: 1 / 1 / 2 / 2;
     text-align: center;
     font-size: 4.5vw;
+    font-style: italic;
 }
 
 #nossa-historia img {
     width: 18vw;
     height: 18vw;
     border-radius: 50%;
-    border: 0.4vw solid black; /* mudar cor da borad pqp */
+    border: 0.4vw solid black;
 }
 
 #nossa-historia p {
     font-size: 2vw;
-}
-
-.unique-p {
-    padding: 0.976562vw;
-    background-color: #707070;
-    margin: 0.976562vw;
-    height: fit-content;
-    width: 50%;
-}
-
-.unique-p p {
-    font-size: 1.5625vw;
+    border: 0.976562vw solid #707070;
+    width: 48%;
     text-align: justify;
-    margin: 0 0;
+    margin: 0.976562vw;
     padding: 0.976562vw;
     background-color: #972618;
-}
-
-#nossa-história p:nth-of-type(2n+1) {
-    order: 1;
 }
 
 #nossa-historia article:first-of-type {
@@ -395,58 +334,101 @@ footer img {
     align-items: center;
 }
 
+/*End nossa história*/
+
+/*Start: sobre nós*/
+
+#sobre-nos {
+    display: grid;
+    grid-template: auto auto / 1fr 5fr 1fr 5fr 1fr 5fr 1fr;
+    background-color: #7a0000;
+    color: white; 
+    text-align: justify;
+    font-family: 'League Gothic', sans-serif;
+    position: relative;
+    top: 6.104vw;
+}
+
+#sobre-nos p {
+    font-size: 1.7vw;
+}
+
+#sobre-nos div:first-of-type {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+#sobre-nos div:nth-of-type(2) {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+#sobre-nos div:last-of-type {
+    grid-area: 2 / 6 / 3 / 7;
+}
+
+#sobre-nos img {
+    padding: 13vw;
+    width: 2vw;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+#sobre-nos img:first-of-type {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+#sobre-nos img:nth-of-type(2) {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+#sobre-nos img:last-of-type {
+    grid-area: 1 / 6 / 2 / 7;
+}
+
+/*End sobre nós*/
+
+/*Start footer*/
+
+footer {
+    font-family: 'League Gothic', sans-serif;
+    position: relative;
+    top: 5.6vw;
+    height: 7.8vw;
+    display: block;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.4vw;
+    color: white;
+    font-style: italic;
+    margin: 0.5% 0;
+}
+
+footer img {
+    width: 2.15vw;
+    margin: 0.15%;
+    border: 0.147vw solid white;
+    border-radius: 50%;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+}
+/*End footer*/
+
+/*Start Cell*/
+
 @media screen and (orientation: portrait) {
-    body {
-        background-color: black;
-        margin: 0 0;
-    }
-    
-    a:link {
-        color: white;
-        text-decoration: none;
-    }
-    
-    a:visited {
-        color: white;
-    }
-    
-    a:hover {
-        color: #7a0000;
-    }
-    
-    a:active {
-        color: white;
-    }
-    
-    nav {
-        position: fixed;
-        z-index: 1;
-        background-color: black;
-        width: 100%;
-        font-family: 'League Gothic', sans-serif;
-        color: white;
-        font-style: italic;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
+    /*Start header*/
+
     header {
         margin-left: 0.247%;
-        display: grid;
-        grid-template: 1fr 1fr / auto auto auto;
     }
     
-    header p:first-of-type {
-        margin: auto 0 2.045% 0;
-        font-size: 0;
-        text-align: center;
-    }
-    
+    header p:first-of-type,
     header p:nth-of-type(2) {
-        margin: 0 0;
-        font-size: 0;
-        grid-row-start: 2;
+        display: none;
     }
     
     header a:first-of-type {
@@ -462,21 +444,22 @@ footer img {
     ul {
         font-size: 4vw;
         width: 45%;
-        margin: 0 0;
         padding: 0 4.6vw 0 0;
     }
+
+    /*End header*/
     
-    #principal {
+    /*Start index*/
+
+    #index {
         top: 14vw;
         margin: 0 4.197%;
-        grid-template: auto / 1fr 24fr 1fr 0.533% 0.16% 1fr 24fr 1fr;
     }
 
     .tabela {
         padding: 4.5% 5.4%;
         border-radius: 4.343%;
         margin: 12% auto 0 auto;
-        height: auto;
         width: 35vw;
     }
     
@@ -502,9 +485,9 @@ footer img {
     
     #codigo {
         width: 32vw;
-        height: 22vw;
+        height: 21vw;
         margin: 5vw auto;
-        border-radius: 1vw;
+        border-radius: 1.5vw;
     }
     
     #codigo img {
@@ -522,19 +505,19 @@ footer img {
     #esquerda img {
         width: 40vw;
     }
-    
-    .ingredientes {
+
+    .text {
         margin: 2vw 0;
         padding: 2vw;
     }
     
-    #esquerda h2 {
+    .text h2 {
         font-size: 6vw;
         margin: 0 0 2vw 0;
         padding: 2vw;
     }
     
-    #esquerda p:not(.alergicos) {
+    .text p:not(.alergicos) {
         font-size: 4vw;
         padding: 2vw;
     }
@@ -544,6 +527,59 @@ footer img {
         margin: 2vw 0 0 0;
         padding: 2vw;
     }
+
+    /*End index*/
+
+    /*Start nossa história*/
+
+    #nossa-historia {
+        top: 14vw;
+    }
+
+    #nossa-historia h1 {
+        font-size: 6.5vw;
+    }
+
+    #nossa-historia img {
+        width: 34vw;
+        height: 34vw;
+        border: .7vw solid black;
+    }
+
+    #nossa-historia p {
+        font-size: 4vw;
+        border: 2vw solid #707070;
+        width: 48%;
+        margin: 2vw;
+        padding: 2vw;
+    }
+
+    /*End nossa história*/
+
+    /*Start: sobre nós*/
+    
+    #sobre-nos {
+        top: 14vw;
+        display: flex;
+        flex-direction: column;
+        padding: 0 6vw 0 6vw;
+        justify-content: space-around;
+    }
+    
+    #sobre-nos p {
+        font-size: 5vw;
+    }
+    
+    #sobre-nos img {
+        padding: 39vw;
+        width: 6vw;
+        margin: 0 auto;
+        border-radius: 50%;
+    }
+
+    /*End sobre nós*/
+
+    /*Start footer*/
     
     footer {
         top: 13.5vw;
@@ -559,4 +595,8 @@ footer img {
         border: 0.147vw solid white;
         border-radius: 50%;
     }
+
+    /*End footer*/
 }
+
+/*End Cell*/
