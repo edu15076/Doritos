@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário para confirmação de compra</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="form">
+    <h1>CAMPO DE PREENCHIMENTO PARA CONFIRMAÇÃO DE COMPRA</h1>
+    <form id="formulario">
+            <div>
+                <label>Nome</label>
+                <input type="text" id="nome">
+            </div>
+
+            <div>
+                <label>Sobrenome</label>
+                <input type="text" id="sobrenome">
+            </div>
+        
+        <div>
+            <label>Email</label>
+            <input type="email" id="email">
+        </div>
+
+        <div>
+            <label>Digite seu CPF</label>
+            <input type="text" id="cpf">
+        </div>
+
+        <div>
+            <label>Idade</label>
+            <select id="selecione">
+                <option selected disabled>Selecione</option>
+                <option>Menor que 18 anos</option>
+                <option>De 18 anos à 65</option>
+                <option>Maior que 65 anos</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Número do Cartão</label>
+            <input type="text" id="ncartao">
+        </div>
+        <div>
+            <label>Data de Validade do Cartão</label>
+            <input type="text" id="vcartao">
+        </div>
+        <div>
+            <label>Código de Segurança do Cartão</label>
+            <input type="text" id="scartao">
+        </div>
+
+        <div>
+            <label>Endereço</label>
+            <textarea id="endereco"></textarea>
+        </div>
+
+        <div>
+            <label>Infromações extras que julgar necessárias:</label>
+            <textarea row="4" id="infextras"></textarea>
+        </div>
+
+        <button type="submit" onclick="alert('Operação finalizada com sucesso, basta retornar à página inicial para confirmação final.')">Concluído</button>
+    </form>
+    <a href="principais-sabores.html">Voltar</a>
+</body>
+</html>
