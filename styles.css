@@ -99,7 +99,7 @@ header p:nth-of-type(2) {
     grid-row-start: 2;
 }
 
-header a img {
+header a img{
     position: absolute;
     height: 92%;
     margin: .2441408vw .488283vw .2441408vw 2.441406vw;
@@ -295,18 +295,11 @@ td, th {
     font-style: italic;
 }
 
-.spin { animation: spining 2s ease-in 0s 1 reverse; }
-
 #nossa-historia img {
     width: 18vw;
     height: 18vw;
     border-radius: 50%;
     border: 0.4vw solid black;
-}
-
-@keyframes spining {
-    from { transform: rotateY(0turn); }
-    to   { transform: rotateY(3turn); }
 }
 
 #nossa-historia p {
@@ -349,87 +342,188 @@ td, th {
 
 /*End nossa história*/
 
-/*Start edicoes limitadas*/
+/*Start: principais-sabores*/
 
-#edicoes-limitadas div {
-    font-size: 1.5625vw;
-    text-align: center;
-    padding: 0.976562vw;
-    background-color: #e00a0a;
-    border: 2px solid #181717 ;
-    border-radius: 50%;
-    display: inline;
-}
-
-#edicoes-limitadas div:active {
+#principais-sabores {
     position: relative;
-    bottom: 3px;
-    background-color: yellow;
-    transition: all 200ms ease;
-    cursor: pointer;
-}
-
-#edicoes-limitadas {
-    display: grid;
-    grid-template: 1fr 1fr 1fr / 30px 1fr 1fr 1fr 30px;
-    font-size: 1.5625vw;
-    text-align: center;
-    background-color: #972618;
+    top: 6.104vw;
     font-family: 'League Gothic', sans-serif;
     color: white;
-}
-
-#edicoes-limitadas img {
-    max-width:200px;
-    max-height:150px;
-    width: 18vw;
-    height: 18vw;
-}
-
-#edicoes-limitadas section {
-    grid-column: 2 / 5;
-    grid-row: 1 / 1;
-}
-
-#edicoes-limitadas .dc {
+    background-color: #7a0000;
     display: grid;
+    grid-template: auto / 2% 22.5% 2% 22.5% 2% 22.5% 2% 22.5% 2%;
 }
 
-#edicoes-limitadas .dc img {
-    display: grid; 
-    grid-column: 2 / 2;
-    grid-row: 2 / 2; 
+#principais-sabores h1 {
+    font-size: 2.246092vw;
+    text-align: center;
+    font-style: italic;
+    margin: 0 0 0.976562vw 0;
+    padding: 0.976562vw;
+    grid-area: 1 / 4 / 2 / 7;
 }
 
-#edicoes-limitadas .misterio {
-    display: grid;
+#principais-sabores p {
+    color: #7a0000;
+    position: absolute;
+    top: 0.5vw;
+    right: 0.5vw;
+    font-size: 2vw;
 }
 
-#edicoes-limitadas .misterio img {
-    display: grid;
+#loja {
+    display: flex;
+    position: relative;
+    grid-area: 2 / 2 / 3 / 9;
+    background-color: white;
+    justify-content: space-between;
+    height: 19vw;
+    border: 4px solid black;
+    padding-top: 2.2vw;
+    border-radius: 2vw;
 }
 
-#edicoes-limitadas .gay {
-    display: grid;
+#tdq, #tdc, #tdr, #tdw {
+    opacity: 0;
+    width: 17vw;
+    height: auto;
+    padding: 0.3vw;
+    padding-right: o.15px;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
-#edicoes-limitadas .gay img {
-    display: grid;
+#dq:hover #tdq {
+    width: 17vw;
+    opacity: 1;
+    height: auto;
+    border: 0.7vw solid black;
+    border-radius: 0.8vw;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 1vw;
+    left: 0.5vw;
 }
 
-#edicoes-limitadas .roleta {
-    display: grid;
+#dc:hover #tdc {
+    width: 17vw;
+    opacity: 1;
+    height: auto;
+    border: 0.7vw solid black;
+    border-radius: 0.8vw;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 1vw;
+    left: 26vw;
 }
 
-#edicoes-limitadas .roleta img {
-    display: grid;
-    grid-column: 4 / 5;
-    grid-row: 3 / 3;
+#dr:hover #tdr {
+    width: 17vw;
+    opacity: 1;
+    height: auto;
+    border: 0.7vw solid black;
+    border-radius: 0.8vw;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 1vw;
+    left: 52vw;
 }
 
-/*End edicoes*/
+#dw:hover #tdw {
+    width: 17vw;
+    opacity: 1;
+    height: auto;
+    border: 0.7vw solid black;
+    border-radius: 0.8vw;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 1vw;
+    left: 75vw;
+}
 
-/*Start: sobre nós*/
+#botoes {
+    display: flex;
+    grid-area: 3 / 2 / 4 / 9;
+    justify-content: space-between;
+    margin-top: 1.8vw;
+}
+
+.comprar {
+    height: 6vw;
+    width: 9vw;
+    font-style: italic;
+    font-size: 1.5vw;
+    border-radius: 0.8vw;
+    margin-bottom: 10vw;
+    font-weight: bold;
+}
+
+#pbotao {
+    border: 0.35vw solid #972618; 
+    color: #972618;
+}
+
+#sbotao {
+    border: 0.35vw solid black;
+    color: black;
+}
+
+#tbotao {
+    border: 0.35vw solid rgb(52, 52, 249);
+    color: rgb(52, 52, 249);
+}
+
+#qbotao {
+    border: 0.35vw solid rgba(50, 255, 47, 0.701);
+    color: rgba(50, 255, 47, 0.701);
+}
+
+#form {
+    background-image: linear-gradient( to left top, orange, red );
+    background-size: cover;
+    position: relative;
+}
+
+/*Precisamos alinhar os espaços do questionário*/
+
+#form h1 {
+    text-align: center;
+    font-style: oblique;
+    font-size: 3.9vw;
+    font-family: 'League Gothic', sans-serif;
+}
+
+#formulario {
+    text-align: center;
+    font-size: 1.7vw;
+}
+
+input[type="text"], input[type="email"] {
+    height: 1.5vw;
+    width: auto;
+}
+
+label, input, select {
+    margin-bottom: 1.5%;
+}
+
+#form a {
+    float: right;
+    color: #7a0000;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 3vw;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+}
+
+/*End principais-sabores*/
+
+/*Start: sobre-nos*/
 
 #sobre-nos {
     display: grid;
@@ -478,7 +572,84 @@ td, th {
 }
 
 /*End sobre nós*/
+/*Start edicoes limitadas*/
 
+#edicoes-limitadas div{
+    font-size: 1.5625vw;
+    text-align: center;
+    padding: 0.976562vw;
+    background-color: #e00a0a;
+    border: 2px solid #181717 ;
+    border-radius: 50%;
+    display: inline;
+}
+
+#edicoes-limitadas div:active{
+    position: relative;
+    bottom: 3px;
+    background-color: yellow;
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+
+#edicoes-limitadas {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 30px 1fr 1fr 1fr 30px;
+    font-size: 1.5625vw;
+    text-align: center;
+    background-color: #972618;
+    font-family: 'League Gothic', sans-serif;
+    color: white;
+}
+
+#edicoes-limitadas img{
+    max-width:200px;
+    max-height:150px;
+    width: 18vw;
+    height: 18vw;
+}
+
+#edicoes-limitadas section{
+    grid-column: 2 / 5;
+    grid-row: 1 / 1;
+}
+
+#edicoes-limitadas .dc{
+    display: grid;
+}
+
+#edicoes-limitadas .dc img{
+    display: grid; 
+    grid-column: 2 / 2;
+    grid-row: 2 / 2; 
+}
+
+#edicoes-limitadas .misterio{
+    display: grid;
+}
+
+#edicoes-limitadas .misterio img{
+    display: grid;
+}
+
+#edicoes-limitadas .gay{
+    display: grid;
+}
+
+#edicoes-limitadas .gay img{
+    display: grid;
+}
+
+#edicoes-limitadas .roleta{
+    display: grid;
+}
+
+#edicoes-limitadas .roleta img{
+    display: grid;
+    grid-column: 4 / 5;
+    grid-row: 3 / 3;
+}
+/*End edicoes*/
 /*Start footer*/
 
 footer {
@@ -508,6 +679,7 @@ footer div {
     display: flex;
     justify-content: center;
 }
+
 /*End footer*/
 
 /*Start Cell*/
