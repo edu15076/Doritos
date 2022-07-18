@@ -28,6 +28,10 @@
     cursor: pointer;
 }
 
+html {
+    height: 100%;
+}
+
 nav p {
     margin: 0;
     padding: 0;
@@ -541,8 +545,9 @@ td, th {
 
 #form {
     background-image: linear-gradient( to left top, orange, red );
-    background-size: cover;
     position: relative;
+    height: 100%;
+    background-repeat: no-repeat;
 }
 
 /*Precisamos alinhar os espaços do questionário*/
@@ -578,12 +583,12 @@ select {
 }
 
 #form a {
-    float: right;
+    position: absolute;
     color: #7a0000;
     font-family: 'League Gothic', sans-serif;
     font-size: 3vw;
-    margin-right: 1vw;
-    margin-bottom: 1vw;
+    right: 1.5vw;
+    bottom: 2vw;
 }
 
 .area {
@@ -593,10 +598,11 @@ select {
 }
 
 #formulario button {
-    height: 1.3vw;
+    height: 2vw;
     width: 6vw;
-    font-size: 1vw;
+    font-size: 1.2vw;
     border-width: 0.1vw;
+    margin: 3vw 15.9vw;
 }
 
 option {
@@ -638,14 +644,15 @@ option {
 }
 
 #sobre-nos img {
-    padding: 13vw;
-    width: 2vw;
+    padding: 2vw;
+    width: 15vw;
+    height: 15vw;
     margin: 0 auto;
-    border-radius: 50%;
 }
 
 #sobre-nos img:first-of-type {
     grid-area: 1 / 2 / 2 / 3;
+    
 }
 
 #sobre-nos img:nth-of-type(2) {
@@ -947,10 +954,10 @@ footer div {
     }
     
     #sobre-nos img {
-        padding: 39vw;
-        width: 6vw;
+        padding: 6vw;
+        width: 39vw;
+        height: 39vw;
         margin: 0 auto;
-        border-radius: 50%;
     }
 
     /*End sobre nós*/
