@@ -631,11 +631,11 @@ option {
     font-size: 1.7vw;
 }
 
-#sobre-nos div:first-of-type {
+#sobre-nos div:nth-of-type(2) {
     grid-area: 2 / 2 / 3 / 3;
 }
 
-#sobre-nos div:nth-of-type(2) {
+#sobre-nos div:nth-of-type(4) {
     grid-area: 2 / 4 / 3 / 5;
 }
 
@@ -643,24 +643,59 @@ option {
     grid-area: 2 / 6 / 3 / 7;
 }
 
-#sobre-nos img {
+#sobre-nos .will, .greg, .mark {
     padding: 2vw;
     width: 15vw;
     height: 15vw;
     margin: 0 auto;
 }
 
-#sobre-nos img:first-of-type {
+.will {
     grid-area: 1 / 2 / 2 / 3;
-    
+    width: 230.4px;
+    height: 230.4px;
+    background: url(img/will.jpeg) no-repeat;
+    background-size: cover;
 }
 
-#sobre-nos img:nth-of-type(2) {
+.will-js {
+    grid-area: 1 / 2 / 2 / 3;
+    width: 230.4px;
+    height: 230.4px;
+    background: url(img/teste.jpeg) no-repeat;
+    background-size: cover;
+}
+
+.greg {
     grid-area: 1 / 4 / 2 / 5;
+    width: 230.4px;
+    height: 230.4px;
+    background: url(img/greg.jpeg) no-repeat;
+    background-size: cover;
 }
 
-#sobre-nos img:last-of-type {
+.greg-js {
+    grid-area: 1 / 4 / 2 / 5;
+    width: 230.4px;
+    height: 230.4px;
+    background: url(img/teste.jpeg) no-repeat;
+    background-size: cover;
+}
+
+.mark {
     grid-area: 1 / 6 / 2 / 7;
+    width: 230.4px;
+    height: 230.4px;
+    background: url(img/mark.jpeg) no-repeat;
+    background-size: cover;
+}
+
+.mark-js {
+    grid-area: 1 / 6 / 2 / 7;
+    width: 230.4px;
+    height: 230.4px;
+    background: url(img/teste.jpeg) no-repeat;
+    background-size: cover;
 }
 
 /*End sobre nós*/
