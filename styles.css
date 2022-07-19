@@ -28,16 +28,21 @@
     cursor: pointer;
 }
 
+/*Global*/
+
 html {
     height: 100%;
+}
+
+html *::selection {
+    background-color: #ff0008;
+    color: #ffffff;
 }
 
 nav p {
     margin: 0;
     padding: 0;
 }
-
-/*Global*/
 
 body {
     background-color: black;
@@ -82,7 +87,8 @@ a:visited {
     color: white;
 }
 
-a:not(header a:first-of-type):hover {
+nav a:nth-of-type(2):hover,
+ul a:hover {
     filter: drop-shadow(0 0 1vw #ff6a6f);
 }
 
@@ -469,19 +475,8 @@ td, th {
     grid-area: 1 / 8 / 2 / 9;
 }
 
-#loja img:first-of-type:hover + h2 {
-    display: block;
-}
-
-#loja img:nth-of-type(2):hover + h2 {
-    display: block;
-}
-
-#loja img:nth-of-type(3):hover + h2 {
-    display: block;
-}
-
-#loja img:last-of-type:hover + h2 {
+#loja img:nth-of-type(n):hover + h2,
+#loja h2:nth-of-type(n):hover {
     display: block;
 }
 
@@ -513,6 +508,11 @@ td, th {
     grid-area: 1 / 8 / 2 / 9;
 }
 
+#botoes a {
+    width: min-content;
+    margin: auto;
+}
+
 .comprar {
     height: 6vw;
     width: 9vw;
@@ -521,6 +521,10 @@ td, th {
     border-radius: 0.8vw;
     margin-bottom: 10vw;
     font-weight: bold;
+}
+
+#botoes button {
+    cursor: pointer;
 }
 
 #botoes a:first-of-type button {
@@ -557,7 +561,8 @@ td, th {
     font-style: oblique;
     font-size: 3.9vw;
     font-family: 'League Gothic', sans-serif;
-    margin: 2.6vw 0;
+    padding: 2.6vw 0;
+    margin: 0;
 }
 
 #formulario {
@@ -588,7 +593,7 @@ select {
     font-family: 'League Gothic', sans-serif;
     font-size: 3vw;
     right: 1.5vw;
-    bottom: 2vw;
+    bottom: 0;
 }
 
 .area {
@@ -603,6 +608,7 @@ select {
     font-size: 1.2vw;
     border-width: 0.1vw;
     margin: 3vw 15.9vw;
+    padding: 0;
 }
 
 option {
@@ -839,11 +845,10 @@ footer div {
     }
     
     ul {
-        position: absolute;
         z-index: 99;
         top: -13vw;
         right: 0;
-        background-color: #0a0a0a;
+        background-color: #000000;
         flex-direction: column;
         font-size: 4vw;
         width: 100%;
