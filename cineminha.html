@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cinema</title>
+    <link rel="stylesheet" href="minigames.css">
+    <link rel="icon" href="img/Doritos-Logo.png">
+</head>
+
+<body>
+    <main id="cinema">
+        <h1>Assista a uma cena do filme :)</h1>
+        <iframe id="video1" width="1000" height="500" src="https://youtube.com/embed/83NbaTGNTng"></iframe>
+        <p>Pipoca Grátis</p>
+        <button><img src="img/caixa.jpg" id="botao"></button>
+        <div id="images"></div>
+    </main>
+</body>
+<script>
+    const button = document.querySelector('button');
+    button.addEventListener('click', appendImage);
+    function appendImage() {
+        const div = document.querySelector('#images');
+        const image = new Image(140, 140); 
+        image.src = 'img/pipoca.png';
+        div.appendChild(image);
+    }
+</script>
+
+</html>
