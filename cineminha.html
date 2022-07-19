@@ -18,16 +18,16 @@
         <button><img src="img/caixa.jpg" id="botao"></button>
         <div id="images"></div>
     </main>
+    <script>
+        const button = document.querySelector('button');
+        button.addEventListener('click', appendImage);
+        function appendImage() {
+            const div = document.querySelector('#images');
+            const image = new Image(120, 120); 
+            image.src = 'img/pipoca.png';
+            div.appendChild(image);
+        }
+    </script>
 </body>
-<script>
-    const button = document.querySelector('button');
-    button.addEventListener('click', appendImage);
-    function appendImage() {
-        const div = document.querySelector('#images');
-        const image = new Image(140, 140); 
-        image.src = 'img/pipoca.png';
-        div.appendChild(image);
-    }
-</script>
 
 </html>

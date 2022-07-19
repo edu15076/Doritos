@@ -32,20 +32,28 @@ const baralho = [
         img: "img/roxa.jpg"
     },
     {
-        nome: "mist",
-        img: "img/misterio.jpeg"
+        nome: "gay2",
+        img: "img/gay2.jpg"
     },
     {
-        nome: "mist",
-        img: "img/misterio.jpeg"
+        nome: "gay2",
+        img: "img/gay2.jpg"
     },
     {
-        nome: "dorito",
-        img: "img/doritos-queijo.jpg"
+        nome: "arco",
+        img: "img/arco.jpg"
     },
     {
-        nome: "dorito",
-        img: "img/doritos-queijo.jpg"
+        nome: "arco",
+        img: "img/arco.jpg"
+    },
+    {
+        nome: "rosa",
+        img: "img/rosa.jpg"
+    },
+    {
+        nome: "rosa",
+        img: "img/rosa.jpg"
     }
 ];
 baralho.sort(() => {
@@ -79,7 +87,7 @@ function escolherCarta() {
             let carta1 = escolhidas[0];
             let carta2 = escolhidas[1];
 
-            if (carta1.name == carta2.name) {
+            if (carta1.name == carta2.name && carta1.id != carta2.id){
                 carta1.src = "img/correto.png";
                 carta2.src = "img/correto.png";
                 carta1.removeEventListener("click", escolherCarta);
@@ -97,7 +105,7 @@ function escolherCarta() {
             }
 
             escolhidas = [];
-        }, 1000);
+        }, 200);
 
     }
 }
