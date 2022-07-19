@@ -31,17 +31,12 @@
 /*Global*/
 
 html {
-    height: 100%;
+    min-height: 100%;
 }
 
 html *::selection {
     background-color: #ff0008;
     color: #ffffff;
-}
-
-nav p {
-    margin: 0;
-    padding: 0;
 }
 
 body {
@@ -87,13 +82,13 @@ a:visited {
     color: white;
 }
 
+a:active {
+    color: white;
+}
+
 nav a:nth-of-type(2):hover,
 ul a:hover {
     filter: drop-shadow(0 0 1vw #ff6a6f);
-}
-
-a:active {
-    color: white;
 }
 
 nav {
@@ -592,7 +587,7 @@ select {
     color: #7a0000;
     font-family: 'League Gothic', sans-serif;
     font-size: 3vw;
-    right: 1.5vw;
+    right: 2.5vw;
     bottom: 0;
 }
 
@@ -649,139 +644,181 @@ option {
     grid-area: 2 / 6 / 3 / 7;
 }
 
-#sobre-nos .will, .greg, .mark {
+#sobre-nos .will, .greg, .mark, .will-js, .greg-js, .mark-js {
     padding: 2vw;
-    width: 15vw;
-    height: 15vw;
+    width: 12.2vw;
+    height: 12.2vw;
     margin: 0 auto;
+    border-radius: 50%;
 }
 
 .will {
     grid-area: 1 / 2 / 2 / 3;
-    width: 230.4px;
-    height: 230.4px;
     background: url(img/will.jpeg) no-repeat;
     background-size: cover;
 }
 
 .will-js {
     grid-area: 1 / 2 / 2 / 3;
-    width: 230.4px;
-    height: 230.4px;
-    background: url(img/teste.jpeg) no-repeat;
+    background: url(img/ArthurT.jpg) no-repeat;
     background-size: cover;
 }
 
 .greg {
     grid-area: 1 / 4 / 2 / 5;
-    width: 230.4px;
-    height: 230.4px;
     background: url(img/greg.jpeg) no-repeat;
     background-size: cover;
 }
 
 .greg-js {
     grid-area: 1 / 4 / 2 / 5;
-    width: 230.4px;
-    height: 230.4px;
-    background: url(img/teste.jpeg) no-repeat;
+    background: url(img/ArthurM.jpg) no-repeat;
     background-size: cover;
+
 }
 
 .mark {
     grid-area: 1 / 6 / 2 / 7;
-    width: 230.4px;
-    height: 230.4px;
     background: url(img/mark.jpeg) no-repeat;
     background-size: cover;
 }
 
 .mark-js {
     grid-area: 1 / 6 / 2 / 7;
-    width: 230.4px;
-    height: 230.4px;
-    background: url(img/teste.jpeg) no-repeat;
+    background: url(img/Eduardo.jpg) no-repeat;
     background-size: cover;
 }
-
 /*End sobre nós*/
 /*Start edicoes limitadas*/
+
+#edicoes-limitadas h1 {
+    font-size: 3.6vw;
+}
+
+#edicoes-limitadas h2 {
+    font-size: 2.6vw;
+    text-shadow: #e00a0a 3px 3px;
+}
+
+#edicoes-limitadas {
+    display: grid;
+    grid-template: auto auto auto auto auto / 1.5vw 1fr 1fr 1fr 1.5vw;
+    font-size: 1.5625vw;
+    text-align: center;
+    background-color: #7a0000;
+    font-family: 'League Gothic', sans-serif;
+    color: white;
+    position: relative;
+    top: 6.104vw;
+}
 
 #edicoes-limitadas div{
     font-size: 1.5625vw;
     text-align: center;
     padding: 0.976562vw;
     background-color: #e00a0a;
-    border: 2px solid #181717 ;
+    border: 0.13vw solid #181717 ;
     border-radius: 50%;
     display: inline;
 }
 
 #edicoes-limitadas div:active{
     position: relative;
-    bottom: 3px;
-    background-color: yellow;
+    bottom: 0.3vw;
     transition: all 200ms ease;
     cursor: pointer;
 }
 
-#edicoes-limitadas {
-    display: grid;
-    grid-template: 1fr 1fr 1fr / 30px 1fr 1fr 1fr 30px;
-    font-size: 1.5625vw;
-    text-align: center;
-    background-color: #972618;
-    font-family: 'League Gothic', sans-serif;
-    color: white;
-}
-
 #edicoes-limitadas img{
-    max-width:200px;
-    max-height:150px;
+    max-width:20vw;
+    max-height:20vw;
     width: 18vw;
     height: 18vw;
+    margin: 0 auto;
 }
 
-#edicoes-limitadas section{
+#edicoes-limitadas section:not(h1){
     grid-column: 2 / 5;
-    grid-row: 1 / 1;
+    grid-row: 1 / 2;
 }
 
-#edicoes-limitadas .dc{
-    display: grid;
+#edicoes-limitadas p{
+    color: white;
+    text-shadow: #0a0a0a 0.13vw 0.13vw;
+    border: 0.13vw solid black;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
-#edicoes-limitadas .dc img{
-    display: grid; 
-    grid-column: 2 / 2;
-    grid-row: 2 / 2; 
+#edicoes-limitadas #dc{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3; 
+    background-image: linear-gradient(to right, rgb(32, 68, 2), rgb(16, 3, 73));
 }
 
-#edicoes-limitadas .misterio{
-    display: grid;
+#edicoes-limitadas img:first-of-type{ 
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 }
 
-#edicoes-limitadas .misterio img{
-    display: grid;
+#edicoes-limitadas #misterio{
+    grid-column: 3 / 4;
+    grid-row: 3 / 4; 
+    background-image: linear-gradient(to right, white, black); 
 }
 
-#edicoes-limitadas .gay{
-    display: grid;
+#edicoes-limitadas img:nth-of-type(2){
+    grid-column: 2 / 3;
+    grid-row: 3 / 4; 
 }
 
-#edicoes-limitadas .gay img{
-    display: grid;
+#edicoes-limitadas #gay{
+    grid-column: 3 / 4;
+    grid-row: 4 / 5; 
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
 }
 
-#edicoes-limitadas .roleta{
-    display: grid;
+#edicoes-limitadas img:nth-of-type(3){
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
 }
 
-#edicoes-limitadas .roleta img{
-    display: grid;
+#edicoes-limitadas #roleta{
+    grid-column: 3 / 4;
+    grid-row: 5 / 6; 
+    background-image: linear-gradient(180deg, rgb(82, 9, 9), rgb(0, 0, 0));
+}
+
+#edicoes-limitadas img:last-of-type{
+    grid-column: 2 / 3;
+    grid-row: 5 / 6; 
+}
+
+#edicoes-limitadas #video1{
     grid-column: 4 / 5;
-    grid-row: 3 / 3;
+    grid-row: 2 / 3; 
 }
+
+#edicoes-limitadas #video2{
+    grid-column: 4 / 5;
+    grid-row: 3 / 4; 
+}
+
+#edicoes-limitadas #video3{
+    grid-column: 4 / 5;
+    grid-row: 4 / 5; 
+}
+
+#edicoes-limitadas #video4{
+    grid-column: 4 / 5;
+    grid-row: 5 / 6; 
+}
+#edicoes-limitadas iframe{
+    margin-left: 6.5vw;
+    margin-top: 1.6vw;
+}
+
 /*End edicoes*/
 
 /*Start footer*/
