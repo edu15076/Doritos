@@ -903,7 +903,7 @@ footer div {
         display: block;
         font-style: normal;
         font-size: 6vw;
-        margin-left: 55%;
+        margin: 0 0 0 55%;
         cursor: pointer;
     }
 
