@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    background-color: rgb(128, 0, 0);
+    height: 100vh;
+    position: relative;
+}
+
+#memoria, #caca { 
+   background-color: rgb(0, 0, 0);
+   height: 100%;
+}
+
+#memoria {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#memoria h1, #memoria p {
+    text-align: center;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 8vw;
+    color: white;
+    text-shadow: black .2vw .2vw;
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    border: .13vw rgb(0, 0, 0) solid;
+}
+
+#memoria h1 {
+    top: 0;
+}
+
+#memoria p {
+    bottom: 0;
+}
+
+#grade {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vw;
+    margin: auto;
+    justify-content: center;
+}
+
+#memoria img {
+    width: 8vw;
+}
+
+#roleta {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'League Gothic', sans-serif;
+}
+
+#roleta img {
+    width: 8.5vw;
+}
+
+#roleta body {
+    background-color: black;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+div.box {
+    background-color: brown;
+    border-radius: .75vw;
+    padding: .75vw;
+    height: 97%;
+    min-height: fit-content;
+    text-align: center;
+}
+
+div.box h1 {
+    font-size: 16vw;
+    color: aliceblue;
+    margin: .75vw 0;
+}
+
+div.box button {
+    font-size: 5vw;
+    padding: .5vw .75vw;
+    border: 0;
+    border-radius: .25vw;
+    background-color: chocolate;
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+#cinema {
+    background-color: rgb(128, 0, 0);
+    margin: .5vw;
+    position: relative;
+}
+
+#cinema iframe {
+    border: .2vw rgb(255, 255, 255) solid;
+    margin: 1vw;
+    height: 36vw;
+    width: 64vw;
+}
+
+#cinema img {
+    width: 8vw;
+    height: 8vw;
+}
+
+#cinema #botao {
+    cursor: pointer;
+    height: auto;
+}
+
+#cinema button {
+    padding: 0;
+}
+
+#cinema h1 {
+    text-align: center;
+    font-family: 'League Gothic', sans-serif;
+    color: whitesmoke;
+    text-shadow: black .2vw  .2vw;
+    font-size: 3vw;
+}
+
+#cinema p {
+    font-family: 'League Gothic', sans-serif;
+    color: whitesmoke;
+    text-shadow: black .2vw  .2vw;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+#pipoca {
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    position: fixed;
+    top: 4vw;
+    right: 4vw;
+}
+
+#caca {
+    font-family: 'Sarabun', sans-serif;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+    padding: 1vw 0;
+}
+
+#caca h1 {
+    color: white;
+    text-align: center;
+    grid-area: 1 / 1 / 1 / 1;
+}
+
+#caca p {
+    text-align: center;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+#caca p:hover {
+    text-shadow: burlywood .05vw .05vw;
+    color: rgb(255, 0, 0);
+}
+
+.visited {
+    color: rgb(255, 45, 45);
+}
+
+#caca div:first-of-type {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3; 
+}
+
+#caca div:nth-of-type(2) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2; 
+}
+
+#caca div:nth-of-type(3) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3; 
+}
+
+#caca div:nth-of-type(4) {
+    grid-column: 5 / 6;
+    grid-row: 3 / 4; 
+}
+
+#caca div:nth-of-type(5) {
+    grid-column: 5 / 6;
+    grid-row: 1 / 2; 
+}
+
+#caca div:last-of-type {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5; 
+}
+
+@media screen and (orientation: portrait) {
+    #caca p {
+        font-size: 4vw;
+    }
+
+    #caca h1  {
+        font-size: 6vw;
+    }
+
+    #memoria h1, #memoria p {
+        font-size: 14vw;
+    }
+
+    #grade {
+        width: 40vw;
+    }
+
+    #memoria img {
+        width: 14vw;
+    }
+
+    #roleta img {
+        width: 28vw;
+    }
+
+    div.box button {
+        height: 24vw;
+    }
+
+    div.box {
+        border-radius: 3vw;
+        padding: 3vw;
+        height: fit-content;
+    }
+    
+    div.box h1 {
+        font-size: 25vw;
+        margin: 3vw 0;
+    }
+    
+    div.box button {
+        font-size: 12vw;
+        height: 55vw;
+        border-radius: 5vw;
+    }
+
+    #cinema {
+        margin: 2vw;
+    }
+    
+    #cinema iframe {
+        margin: 3vw;
+        height: 36vw;
+        width: 64vw;
+    }
+    
+    #cinema img {
+        width: 18vw;
+        height: 18vw;
+    }
+    
+    #cinema button {
+        padding: 0;
+        width: 20vw;
+    }
+    
+    #cinema h1 {
+        text-shadow: black .6vw  .6vw;
+        font-size: 4vw;
+    }
+    
+    #cinema p {
+        text-shadow: black .6vw  .6vw;
+        font-size: 3vw;
+    }
+    
+    #pipoca {
+        width: 19.5vw;
+        position: fixed;
+        top: 10vw;
+        right: 5vw;
+    }
+}
