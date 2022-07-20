@@ -644,7 +644,7 @@ option {
     grid-area: 2 / 6 / 3 / 7;
 }
 
-#sobre-nos .will, .greg, .mark, .will-js, .greg-js, .mark-js {
+.will, .greg, .mark, .will-js, .greg-js, .mark-js {
     padding: 2vw;
     width: 12.2vw;
     height: 12.2vw;
@@ -1287,19 +1287,19 @@ footer div {
         top: 14vw;
         display: flex;
         flex-direction: column;
-        padding: 0 6vw 0 6vw;
+        padding: 3vw 6vw;
         justify-content: space-around;
     }
     
     #sobre-nos p {
         font-size: 5vw;
     }
-    
-    #sobre-nos img {
-        padding: 6vw;
-        width: 39vw;
-        height: 39vw;
-        margin: 0 auto;
+
+    .will, .will-js,
+    .greg, .greg-js,
+    .mark, .mark-js {
+        width: 30vw;
+        height: 30vw;
     }
 
     /*End sobre nós*/
